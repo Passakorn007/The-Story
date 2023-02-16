@@ -1,0 +1,37 @@
+.p{
+    font-family:cursive;
+}
+.body{
+    
+}
+h1{
+    top: 50%;
+    left: 50%;
+    font-family: cursive;
+    text-align: center;
+    font-size: 400%;
+}
+.content{
+    background-color: #fdf6dc;
+    width: 500px;
+    height: 500;
+    padding: 100px;
+    margin: 25px;
+    text-align: center;  
+    position: fixed;  
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);  
+}
+.content img{
+    top: 50%;
+    left: 50%;
+    text-align: center;
+
+}
+.header{
+    float: left;
+}
+
+
+  
