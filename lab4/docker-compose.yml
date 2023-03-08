@@ -1,0 +1,26 @@
+version: '3'
+services:
+  php:
+    container_name: php-apache-sec2
+    #image: php:7.3-apache
+    build: .
+    volumes:
+      - ./mai:/var/www/html/
+    ports:
+      - 5247:80
+    depends_on:
+      - db
+  db:
+    container_name: mysql
+    image: mysql:5.7.40
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_ROOT_DATABASE: db_test
+      MYSQL_USER: mysql
+      MYSQL_PASSWORD: 1234
+    ports:
+      - "3342:3306"
+
+
+
+
